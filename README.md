@@ -43,10 +43,6 @@ def convert_csv_to_vcf(input_csv, output_vcf):
     
     # Define VCF header
     vcf_header = """##fileformat=VCFv4.2
-##source=CustomConversion
-##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
-#CHROM\tPOS\tID\tREF\tALT\tQUAL\tFILTER\tINFO\tFORMAT\t""" + "\t".join(df.columns[5:])
-
     # Prepare VCF content
     vcf_rows = []
     for _, row in df.iterrows():

@@ -20,6 +20,7 @@ vcftools --vcf merged_vcf_520.vcf --max-missing 0.8 --recode --out merged_nomiss
 vcftools --vcf merged_nomiss08.recode.vcf --maf 0.05 --recode --out merged_nomiss08maf005
 
 Finally, I got the real original spreadsheet of LSU550 about their ID and CHROM and POS. 
+
 import pandas as pd
 import argparse
 
